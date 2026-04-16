@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — OutreachPilot</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--indigo:#6366f1;--bg:#0d0d14;--surface:#14141f;--border:#252535;--text:#eeeef8;--muted:#9999bb}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+    header{background:var(--surface);border-bottom:1px solid var(--border);padding:18px 24px;display:flex;align-items:center;gap:12px}
+    header strong{color:var(--indigo);font-size:20px}
+    header span{color:var(--muted);font-size:14px}
+    .container{max-width:780px;margin:48px auto;padding:0 24px 80px}
+    h1{font-size:28px;margin-bottom:8px}
+    .subtitle{color:var(--muted);margin-bottom:40px;font-size:14px}
+    h2{font-size:18px;color:var(--indigo);margin:36px 0 10px}
+    p{color:var(--muted);margin-bottom:14px}
+    ul{color:var(--muted);padding-left:22px;margin-bottom:14px}
+    ul li{margin-bottom:6px}
+    a{color:var(--indigo);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-top:40px}
+    .card p{margin:0;font-size:14px}
+  </style>
+</head>
+<body>
+
+<header>
+  <strong>OutreachPilot</strong>
+  <span>/ Privacy Policy</span>
+</header>
+
+<div class="container">
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Last updated: April 2025</p>
+
+  <h2>Overview</h2>
+  <p>OutreachPilot is a Chrome extension that finds publicly available email addresses and phone numbers on websites you visit. We are committed to protecting your privacy. This policy explains exactly what data we collect, how we use it, and what we never do.</p>
+
+  <h2>Data We Collect</h2>
+  <p>OutreachPilot stores the following data <strong>locally on your device only</strong>, using Chrome's built-in <code>chrome.storage.local</code> API:</p>
+  <ul>
+    <li><strong>Daily usage count</strong> — the number of scans you have performed today (free plan limit tracking). Resets automatically each day.</li>
+    <li><strong>License key</strong> — if you activate a Pro license, your license key is stored locally to unlock Pro features. It is never transmitted to any external server.</li>
+  </ul>
+  <p>No personal information, browsing history, or scan results are ever stored beyond your current browser session.</p>
+
+  <h2>Data We Do NOT Collect</h2>
+  <ul>
+    <li>We do not collect your name, email address, or any account information</li>
+    <li>We do not transmit any data to external servers or third parties</li>
+    <li>We do not track which websites you visit or scan</li>
+    <li>We do not store or log the emails or phone numbers you find</li>
+    <li>We do not use analytics, tracking pixels, or third-party SDKs</li>
+  </ul>
+
+  <h2>Permissions Explained</h2>
+  <ul>
+    <li><strong>activeTab + scripting</strong> — Required to scan the currently open web page for contact information when you click the scan button. The extension only activates when you explicitly trigger a scan.</li>
+    <li><strong>storage</strong> — Used exclusively to persist your daily usage count and Pro license key on your local device.</li>
+    <li><strong>clipboardWrite</strong> — Allows you to copy discovered emails and phone numbers to your clipboard with one click.</li>
+    <li><strong>tabs</strong> — Used by the Deep Scan feature (Pro) to identify and fetch linked sub-pages (e.g., /contact, /about) on the same domain you are viewing.</li>
+  </ul>
+
+  <h2>How the Extension Works</h2>
+  <p>When you click "Find Emails & Phones," the extension reads the visible text and links on the active web page using a content script running in your browser. It applies regex patterns to extract email addresses and phone numbers from the page content. All processing happens entirely within your browser — no data is sent to any server.</p>
+  <p>The Pro Deep Scan feature additionally fetches linked pages (contact, about, team pages) from the same domain to find additional contact information. These requests go directly from your browser to the target website, just as if you had navigated there yourself.</p>
+
+  <h2>License Key Validation</h2>
+  <p>OutreachPilot uses a simple local format check for license key validation — no network request is made to validate your key. Your key is stored only on your device and is never transmitted anywhere.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>OutreachPilot is not directed at children under the age of 13 and does not knowingly collect any information from children.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this policy as the extension evolves. Any changes will be reflected on this page with an updated date. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this privacy policy? Contact us at <a href="mailto:tyris77@gmail.com">tyris77@gmail.com</a>.</p>
+
+  <div class="card">
+    <p><strong>Summary:</strong> OutreachPilot stores nothing on our servers. All data (usage count + license key) stays on your device. We never see what you scan or what contacts you find.</p>
+  </div>
+</div>
+
+</body>
+</html>
